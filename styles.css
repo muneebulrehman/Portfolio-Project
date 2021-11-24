@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  background: white;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.navbar {
+  color: #6070ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: transparent;
+  font-size: 1.5rem;
+  color: #6070ff;
+  cursor: pointer;
+}
+
+#logo {
+  font-weight: 1000;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url(./images/header-shapes\ mobile.png) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  padding: 0 40px;
+}
+
+.banner h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #172b4d;
+}
+
+.banner p {
+  color: #344563;
+}
+
+.contact {
+  width: 100%;
+  padding: 40px;
+  color: #6070ff;
+  text-transform: uppercase;
+}
+
+.icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2rem;
+}
+
+.social-icon {
+  color: #505f79;
+  padding-right: 10px;
+}
