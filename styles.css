@@ -141,8 +141,8 @@ img {
   padding: 0 0.5rem;
 }
 
-.info-portfolio{
-  width:90%;
+.info-portfolio {
+  width: 90%;
 }
 
 .list {
@@ -167,7 +167,7 @@ img {
 }
 
 .tech-used {
-  width:65%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
@@ -261,10 +261,9 @@ img {
   justify-content: flex-start;
   align-items: center;
   padding: 1rem;
-  margin-bottom: 1rem;
   background-color: #f7f7f9;
   border-radius: var(--radius);
-  margin:12px 0;
+  margin: 12px 0;
 }
 
 .lang-name {
