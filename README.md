@@ -11,6 +11,12 @@ Additional description about the project and its features.
 - Added Work section with multiple projects.
 - Added a About Myself section.
 
+# Portfolio Project
+
+To get a local copy up and running follow these simple steps.
+- You cna clone this repo by typing git clone git@github.com/muneebulrehman/Portfolio-Project.git on your terminal.
+- Type cd Portfolio-Project to access the project on the terminal
+
 ## Built With
 
 - Major languages
