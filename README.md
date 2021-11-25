@@ -5,9 +5,11 @@
 > This is my portfolio in the initial stage.
 
 ![screenshot](./screenshot.png)
+![screenshot](./screenshot2.png)
 
 Additional description about the project and its features.
-- None yet
+- Added Work section with multiple projects.
+- Added a About Myself section.
 
 ## Built With
 
