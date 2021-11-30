@@ -209,6 +209,7 @@ img {
   padding: 4rem 2rem;
   background: #fff;
   border-top-right-radius: 50px;
+  margin-bottom: 0;
 }
 
 .about-myself h2 {
@@ -280,4 +281,54 @@ img {
 .drop-icon {
   font-size: 1.3rem;
   color: #acb7c3;
+}
+
+.contact-me {
+  background: url(./images/contact-form-mobile.png) right no-repeat;
+  background-color: #6070ff;
+  padding-top: 6rem;
+  border-top-left-radius: 5rem;
+  padding-bottom: 4rem;
+}
+
+.contact-text {
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.contact-text h2 {
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 1rem;
+  color: var(--clr-white);
+}
+
+.contact-me p {
+  color: #ebebff;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.formElement {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+::placeholder {
+  color: #bcbac5;
+}
+
+.submit-btn {
+  width: 10rem;
+  background-color: #fff;
 }
