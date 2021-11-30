@@ -209,6 +209,7 @@ img {
 	padding: 4rem 2rem;
 	background: #fff;
 	border-top-right-radius: 50px;
+	margin-bottom: 0;
 }
 
 .about-myself h2 {
@@ -283,10 +284,11 @@ img {
 }
 
 .contact-me {
-	background: url(./images/contact-form-2x.png) cover no-repeat;
+	background: url(./images/contact-form-mobile.png) right no-repeat;
 	background-color: #6070ff;
-	padding: 8rem 0;
+	padding-top: 6rem;
 	border-top-left-radius: 5rem;
+	padding-bottom: 4rem;
 }
 
 .contact-text {
@@ -316,11 +318,14 @@ form {
 	margin-bottom: 1rem;
 	padding: 1rem;
 	text-align: left;
+	border-radius: 0.5rem;
+	border: none;
 }
 
 ::placeholder {
 	color: #bcbac5;
 }
-
-
-
+.submit-btn {
+	width: 10rem;
+	background-color: #fff;
+}
