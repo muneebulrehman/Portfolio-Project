@@ -6,10 +6,12 @@
 
 ![screenshot](./screenshot.png)
 ![screenshot](./screenshot2.png)
+![screenshot](./screenshot3.png)
 
 Additional description about the project and its features.
 - Added Work section with multiple projects.
 - Added a About Myself section.
+- Added a contact me section with form.
 
 # Getting Started
 
@@ -40,4 +42,15 @@ Just download or clone the repo and run the index.html file.
 
 - GitHub: [@githubhandle](https://github.com/muneebulrehman)
 
+## Contributions
+👤 **Benjamin Semah**
+
+- GitHub: [@githubhandle](https://github.com/BenjaminSemah)
+
 ## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
