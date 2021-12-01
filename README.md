@@ -7,11 +7,13 @@
 ![screenshot](./screenshot.png)
 ![screenshot](./screenshot2.png)
 ![screenshot](./screenshot3.png)
+![screenshot](./screenshot4.png)
 
 Additional description about the project and its features.
 - Added Work section with multiple projects.
 - Added a About Myself section.
 - Added a contact me section with form.
+- Made the web app desktop compatible
 
 # Getting Started
 

@@ -10,6 +10,7 @@
   --radius: 1rem;
   --clr-white: #fff;
   --spacing: 0.25rem;
+  --transition: all 0.2s linear;
 }
 
 /* Some global styles wght@200;400 */
@@ -39,19 +40,25 @@ img {
 }
 
 .navbar {
-  background-color: var(--clr-white);
-  color: #6070ff;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: var(--clr-white);
+  color: #6070ff;
   z-index: 2;
+}
+
+.nav-center {
+  width: 100%;
   margin: 0 auto;
-  padding: 1rem 2rem;
+}
+
+.nav-header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
 }
 
 .nav-toggle {
@@ -60,25 +67,91 @@ img {
   font-size: 1.5rem;
   color: #6070ff;
   cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-toggle:hover {
+  transform: scale(1.2);
+}
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links {
+  height: 300px;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #2230d2;
+  padding: 2.25rem;
 }
 
 #logo {
   font-weight: 1000;
 }
 
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 1rem 8rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    height: auto;
+    display: flex;
+  }
+
+  .nav-header {
+    padding: 0 0;
+    margin-right: 0.6rem;
+  }
+
+  .nav-link {
+    padding: 0 1rem;
+    margin-right: 0.7rem;
+  }
+
+  .nav-link:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
+
 .hero {
   min-height: 100vh;
-  background: url(./images/header-shapes\ mobile.png) center/cover no-repeat;
+  background: url(./images/header-shapes\ mobile.png) right/contain no-repeat;
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   border-bottom-left-radius: 5rem;
 }
 
 .banner {
-  padding: 0 40px;
+  padding: 0 3rem;
 }
 
 .banner h2 {
@@ -93,23 +166,59 @@ img {
 }
 
 .contact {
-  width: 100%;
-  padding: 40px;
+  padding: 3rem;
   color: #6070ff;
   text-transform: uppercase;
 }
 
 .icons {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: flex-start;
   font-size: 2rem;
 }
 
 .social-icon {
-  padding-right: 10px;
+  padding-right: 1rem;
   color: #505f79;
+  transition: var(--transition);
+  cursor: pointer;
 }
+
+.social-icon:hover {
+  color: black;
+  transform: translateY(5px);
+}
+
+@media screen and (min-width: 992px) {
+  .hero {
+    padding: 0 15rem;
+  }
+
+  .banner {
+    padding-top: 2rem;
+    margin-top: 5rem;
+  }
+
+  .banner h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 60px;
+  }
+
+  .banner p {
+    max-width: 70%;
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+
+  .social-icon {
+    color: #505f79;
+  }
+}
+
+/* work section */
 
 .work {
   margin: 2rem;
@@ -137,40 +246,44 @@ img {
   font-size: 1rem;
   font-weight: bolder;
   display: inline-block;
-  width: 1rem;
-  padding: 0 0.5rem;
-}
-
-.info-portfolio {
-  width: 90%;
+  width: 0.75rem;
+  padding: 0 0.1rem;
 }
 
 .list {
-  margin-right: 1rem;
+  width: 80%;
+
+  /* margin-right: 1rem; */
   display: flex;
   justify-content: space-between;
-  font-size: 0.875rem;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  font-size: 0.75rem;
   font-weight: 600;
   color: #7a869a;
 }
 
 .li {
+  font-size: 0.75rem;
   text-transform: uppercase;
   color: #344563;
 }
 
 .about-portfolio p {
   margin: 1rem 0;
-  padding-left: 0;
   padding-right: 1.5rem;
   color: #344563;
 }
 
 .tech-used {
-  width: 65%;
+  max-width: 65%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .tech {
@@ -204,6 +317,100 @@ img {
   color: #fff;
 }
 
+.about-portfolio-max {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .work {
+    margin: 10rem 10rem;
+    padding: 0;
+  }
+
+  .single-card {
+    display: flex;
+    padding: 2rem 2rem;
+  }
+
+  .card-img {
+    width: 750px;
+    margin-right: 6rem;
+  }
+
+  .card-img img {
+    max-height: 544px;
+    min-height: 544px;
+  }
+
+  .right {
+    flex-direction: row-reverse;
+  }
+
+  .right-img {
+    margin-right: 0;
+    margin-left: 6rem;
+  }
+
+  .about-portfolio {
+    display: none;
+  }
+
+  .about-portfolio-max {
+    display: block;
+  }
+
+  .about-portfolio-max h2 {
+    margin: 1rem 0;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #091e42;
+  }
+
+  .info-portfolio {
+    margin-bottom: 3rem;
+  }
+
+  .list {
+    max-width: 60%;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .li {
+    font-size: 18px;
+    color: #091e42;
+    line-height: 24px;
+  }
+
+  .about-portfolio-max p {
+    font-size: 18px;
+  }
+
+  .tech-used {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    justify-content: flex-start;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+
+  .order-3 {
+    order: 3;
+  }
+
+  .order-4 {
+    order: 4;
+  }
+}
+
+/* about myself section */
+
 .about-myself {
   margin: 2rem 0;
   padding: 4rem 2rem;
@@ -212,7 +419,7 @@ img {
   margin-bottom: 0;
 }
 
-.about-myself h2 {
+.about-text h2 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 42px;
@@ -220,7 +427,7 @@ img {
   color: #172b4d;
 }
 
-.about-myself p {
+.about-me-text {
   font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
@@ -258,6 +465,7 @@ img {
 }
 
 .lang {
+  max-width: 40rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -283,8 +491,45 @@ img {
   color: #acb7c3;
 }
 
+@media screen and (min-width: 992px) {
+  .about-myself {
+    padding: 10rem;
+    border-top-right-radius: 100px;
+  }
+
+  .about-myself-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+
+  .my-skills {
+    margin-top: 0;
+  }
+
+  .about-me-text {
+    max-width: 80%;
+    font-size: 1.2rem;
+    line-height: 24px;
+  }
+
+  .languages {
+    display: flex;
+  }
+
+  .lang {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 1rem;
+  }
+
+  .lang-name {
+    margin-top: 1rem;
+  }
+}
+
 .contact-me {
-  background: url(./images/contact-form-mobile.png) right no-repeat;
+  background: url(./images/contact-form-mobile.png) right/contain no-repeat;
   background-color: #6070ff;
   padding-top: 6rem;
   border-top-left-radius: 5rem;
@@ -331,4 +576,28 @@ form {
 .submit-btn {
   width: 10rem;
   background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-me {
+    border-top-left-radius: 10rem;
+  }
+
+  .contact-me-section {
+    max-width: 40vw;
+    padding: 3rem 5rem;
+    margin: 0 auto;
+  }
+
+  .submit-btn {
+    align-self: center;
+  }
+
+  ::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .formElement {
+    border-radius: 0;
+  }
 }
