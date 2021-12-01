@@ -13,13 +13,22 @@
 	</head>
 	<body>
 		<!-- Header -->
-		<header>
+		<header id="home">
 			<!-- Navbar -->
 			<nav class="navbar">
-				<h1 id="logo">My Logo</h1>
-				<button type="button" class="nav-toggle">
-					<i class="fas fa-bars"></i>
-				</button>
+				<div class="nav-center">
+					<div class="nav-header">
+						<h1 id="logo">My Logo</h1>
+						<button type="button" class="nav-toggle">
+							<i class="fas fa-bars"></i>
+						</button>
+					</div>
+					<ul class="nav-links">
+						<li><a href="#portfolio" class="nav-link">portfolio</a></li>
+						<li><a href="#about" class="nav-link">about</a></li>
+						<li><a href="#contact" class="nav-link">contact</a></li>
+					</ul>
+				</div>
 			</nav>
 
 			<!-- Hero section -->
@@ -41,18 +50,36 @@
 
 					<ul class="icons">
 						<li>
-							<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+							<a
+								href="https://twitter.com/bhatmuneeb_mb"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="social-icon"
+								><i class="fab fa-twitter"></i
+							></a>
 						</li>
 						<li>
-							<a href="#" class="social-icon"
+							<a
+								href="https://www.linkedin.com/in/muneeb-ul-rehman-33903b159/"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="social-icon"
 								><i class="fab fa-linkedin"></i
 							></a>
 						</li>
 						<li>
-							<a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
+							<a href="#" target="_blank" class="social-icon"
+								><i class="fab fa-medium"></i
+							></a>
 						</li>
 						<li>
-							<a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+							<a
+								href="https://github.com/muneebulrehman"
+								target="_blank"
+								rel="noreferrer noopener"
+								class="social-icon"
+								><i class="fab fa-github"></i
+							></a>
 						</li>
 					</ul>
 				</div>
@@ -60,13 +87,134 @@
 		</header>
 
 		<!-- Work section -->
-		<section class="work">
-			<div class="single-card">
-				<img
-					src="./images/SnapshootPortfolio-1.png"
-					alt="Portfolio 1 image"
-					class="p-img"
-				/>
+		<section class="work" id="portfolio">
+			<!-- Single card -->
+			<div class="single-card order-3">
+				<div class="card-img">
+					<img
+						src="./images/SnapshootPortfolio-1.png"
+						alt="Portfolio 1 image"
+						class="p-img"
+					/>
+				</div>
+				<!-- hide after 992 px -->
+				<div class="about-portfolio">
+					<h2>Tonic</h2>
+					<div class="info-portfolio">
+						<ul class="list">
+							<li class="li">canopy</li>
+							<li>Back End Dev</li>
+							<li>2015</li>
+						</ul>
+					</div>
+					<p>
+						A daily selection of privately personalized reads; no accounts or
+						sign-ups required.
+					</p>
+
+					<ul class="tech-used">
+						<li class="tech">html</li>
+
+						<li class="tech">css</li>
+						<li class="tech">javaScript</li>
+					</ul>
+					<a href="#" class="btn">See Projects</a>
+				</div>
+				<!-- hidden till 992 px -->
+				<div class="about-portfolio-max">
+					<h2>Facebook 360</h2>
+					<div class="info-portfolio">
+						<ul class="list">
+							<li class="li">Facebook</li>
+							<li>Full Stack Dev</li>
+							<li>2015</li>
+						</ul>
+					</div>
+					<p>
+						Exploring the future of media in Facebook's first Virtual Reality
+						app; a place to discover and enjoy 360 photos and videos on Gear VR.
+					</p>
+
+					<ul class="tech-used">
+						<li class="tech">html</li>
+						<li class="tech">Ruby on Rails</li>
+						<li class="tech">css</li>
+						<li class="tech">javaScript</li>
+					</ul>
+					<a href="#" class="btn">See Projects</a>
+				</div>
+			</div>
+			<!-- end of single card -->
+
+			<!-- Single card -->
+			<div class="single-card right order-4">
+				<div class="card-img right-img">
+					<img
+						src="./images/SnapshootPortfolio-2.png"
+						alt="Portfolio 1 image"
+						class="p-img"
+					/>
+				</div>
+				<!-- hide after 992 px -->
+				<div class="about-portfolio">
+					<h2>Multi-Post Stories</h2>
+					<div class="info-portfolio">
+						<ul class="list">
+							<li class="li">Canopy</li>
+							<li>Back End Dev</li>
+							<li>2015</li>
+						</ul>
+					</div>
+					<p>
+						A daily selection of privately personalized reads; no accounts or
+						sign-ups required.
+					</p>
+
+					<ul class="tech-used">
+						<li class="tech">html</li>
+						<li class="tech">css</li>
+						<li class="tech">javaScript</li>
+					</ul>
+					<a href="#" class="btn">See Projects</a>
+				</div>
+
+				<!-- hidden till 992 px -->
+
+				<div class="about-portfolio-max">
+					<h2>Uber Navigation</h2>
+					<div class="info-portfolio">
+						<ul class="list">
+							<li class="li">Uber</li>
+							<li>Lead Developer</li>
+							<li>2018</li>
+						</ul>
+					</div>
+					<p>
+						A smart assistant to make driving more safe, efficient, and fun by
+						unlocking your most expensive computer: your car.
+					</p>
+
+					<ul class="tech-used">
+						<li class="tech">html</li>
+						<li class="tech">Ruby on Rails</li>
+						<li class="tech">css</li>
+						<li class="tech">javaScript</li>
+					</ul>
+					<a href="#" class="btn">See Projects</a>
+				</div>
+			</div>
+			<!-- end of single card -->
+
+			<!-- Single card -->
+			<div class="single-card order-1" id="hide-later">
+				<div class="card-img">
+					<img
+						src="./images/SnapshootPortfolio-3.png"
+						alt="Portfolio 1 image"
+						class="p-img"
+					/>
+				</div>
+				<!-- hide after 992 px -->
 				<div class="about-portfolio">
 					<h2>Tonic</h2>
 					<div class="info-portfolio">
@@ -86,56 +234,17 @@
 						<li class="tech">css</li>
 						<li class="tech">javaScript</li>
 					</ul>
+					<a href="#" class="btn">See Projects</a>
 				</div>
-				<a href="#" class="btn">See Projects</a>
-			</div>
 
-			<div class="single-card">
-				<img
-					src="./images/SnapshootPortfolio-2.png"
-					alt="Portfolio 1 image"
-					class="p-img"
-				/>
-				<div class="about-portfolio">
-					<h2>Multi-Post Stories</h2>
-					<div class="info-portfolio">
-						<ul class="list">
-							<li class="li">canopy</li>
-							<li>Back End Dev</li>
-							<li>2015</li>
-							<li class="li"></li>
-							<li class="li"></li>
-						</ul>
-					</div>
-					<p>
-						A daily selection of privately personalized reads; no accounts or
-						sign-ups required.
-					</p>
-
-					<ul class="tech-used">
-						<li class="tech">html</li>
-						<li class="tech">css</li>
-						<li class="tech">javaScript</li>
-					</ul>
-				</div>
-				<a href="#" class="btn">See Projects</a>
-			</div>
-
-			<div class="single-card" id="hide-later">
-				<img
-					src="./images/SnapshootPortfolio-3.png"
-					alt="Portfolio 1 image"
-					class="p-img"
-				/>
-				<div class="about-portfolio">
+				<!-- hidden till 992 px -->
+				<div class="about-portfolio-max">
 					<h2>Tonic</h2>
 					<div class="info-portfolio">
 						<ul class="list">
 							<li class="li">canopy</li>
 							<li>Back End Dev</li>
 							<li>2015</li>
-							<li class="li"></li>
-							<li class="li"></li>
 						</ul>
 					</div>
 					<p>
@@ -148,16 +257,21 @@
 						<li class="tech">css</li>
 						<li class="tech">javaScript</li>
 					</ul>
+					<a href="#" class="btn">See Projects</a>
 				</div>
-				<a href="#" class="btn">See Projects</a>
 			</div>
+			<!-- end of single card -->
 
-			<div class="single-card">
-				<img
-					src="./images/SnapshootPortfolio-4.png"
-					alt="Portfolio 1 image"
-					class="p-img"
-				/>
+			<!-- Single card -->
+			<div class="single-card right order-2">
+				<div class="card-img right-img">
+					<img
+						src="./images/SnapshootPortfolio-4.png"
+						alt="Portfolio 1 image"
+						class="p-img"
+					/>
+				</div>
+				<!-- hide after 992 px -->
 				<div class="about-portfolio">
 					<h2>Multi-Post Stories</h2>
 					<div class="info-portfolio">
@@ -165,8 +279,6 @@
 							<li class="li">canopy</li>
 							<li>Back End Dev</li>
 							<li>2015</li>
-							<li class="li"></li>
-							<li class="li"></li>
 						</ul>
 					</div>
 					<p>
@@ -179,132 +291,178 @@
 						<li class="tech">css</li>
 						<li class="tech">javaScript</li>
 					</ul>
+					<a href="#" class="btn">See Projects</a>
 				</div>
-				<a href="#" class="btn">See Projects</a>
+
+				<!-- hidden till 992 px -->
+				<div class="about-portfolio-max">
+					<h2>Multi-Post Stories</h2>
+					<div class="info-portfolio">
+						<ul class="list">
+							<li class="li">Facebook</li>
+							<li>Full Stack Dev</li>
+							<li>2015</li>
+						</ul>
+					</div>
+					<p>
+						Experimental content creation feature that allows users to add to an
+						existing story over the course of a day without spamming their
+						friends.
+					</p>
+
+					<ul class="tech-used">
+						<li class="tech">html</li>
+						<li class="tech">Ruby on Rails</li>
+						<li class="tech">css</li>
+						<li class="tech">javaScript</li>
+					</ul>
+					<a href="#" class="btn">See Projects</a>
+				</div>
 			</div>
+			<!-- end of single card -->
 		</section>
 
 		<!-- End of work section -->
 
 		<!-- About me section -->
-		<section class="about-myself">
-			<div class="about-text">
-				<h2>
-					About <br />
-					Myself
-				</h2>
-				<p>
-					Hello i'm a software developer! I can help you build a product,
-					feature or website. Look through some of my work and experience! If
-					you like whatyou see and have a project you need coded, don't hesitate
-					to contact me
-				</p>
-			</div>
-			<div class="contact connect">
-				<h3 class="contact-title">let's connect</h3>
+		<section class="about-myself" id="about">
+			<div class="about-myself-section">
+				<div class="about-me-max">
+					<div class="about-text">
+						<h2>
+							About <br />
+							Myself
+						</h2>
+						<p class="about-me-text">
+							Hello i'm a software developer! I can help you build a product,
+							feature or website. Look through some of my work and experience!
+							If you like whatyou see and have a project you need coded, don't
+							hesitate to contact me
+						</p>
+					</div>
+					<div class="contact connect">
+						<h3 class="contact-title">let's connect</h3>
 
-				<ul class="icons">
-					<li>
-						<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-					</li>
-					<li>
-						<a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-					</li>
-					<li>
-						<a href="#" class="social-icon"><i class="fab fa-medium"></i></a>
-					</li>
-					<li>
-						<a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-					</li>
-				</ul>
+						<ul class="icons">
+							<li>
+								<a href="#" class="social-icon"
+									><i class="fab fa-twitter"></i
+								></a>
+							</li>
+							<li>
+								<a href="#" class="social-icon"
+									><i class="fab fa-linkedin"></i
+								></a>
+							</li>
+							<li>
+								<a href="#" class="social-icon"
+									><i class="fab fa-medium"></i
+								></a>
+							</li>
+							<li>
+								<a href="#" class="social-icon"
+									><i class="fab fa-github"></i
+								></a>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="btn">Get my resume</a>
+				</div>
+				<div>
+					<ul class="my-skills">
+						<li class="skill-title">
+							<h3>Languages</h3>
+							<span class="drop-icon"><i class="fas fa-angle-down"></i> </span>
+						</li>
+						<li class="languages skill-section">
+							<div class="lang">
+								<img
+									src="./images/Ellipse-js.png"
+									alt="javaScript logo"
+									class="img-logo"
+								/>
+								<span class="lang-name">JavaScript</span>
+							</div>
+							<div class="lang">
+								<img
+									src="./images/Ellipse-HTML.png"
+									alt="javaScript logo"
+									class="img-logo"
+								/>
+								<span class="lang-name">HTML</span>
+							</div>
+							<div class="lang">
+								<img
+									src="./images/Ellipse-css.png"
+									alt="javaScript logo"
+									class="img-logo"
+								/>
+								<span class="lang-name">CSS</span>
+							</div>
+						</li>
+						<li class="frameworks skill-section">
+							<div class="skill-title passive">
+								<h3>Frameworks</h3>
+								<span class="drop-icon"
+									><i class="fas fa-angle-right"></i>
+								</span>
+							</div>
+						</li>
+						<li class="skills skill-section">
+							<div class="skill-title passive">
+								<h3>Skills</h3>
+								<span class="drop-icon"
+									><i class="fas fa-angle-right"></i>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<a href="#" class="btn">Get my resume</a>
-			<ul class="my-skills">
-				<li class="languages skill-section">
-					<div class="skill-title">
-						<h3>Languages</h3>
-						<span class="drop-icon"><i class="fas fa-angle-down"></i> </span>
-					</div>
-					<div class="lang">
-						<img
-							src="./images/Ellipse-js.png"
-							alt="javaScript logo"
-							class="img-logo"
-						/>
-						<span class="lang-name">JavaScript</span>
-					</div>
-					<div class="lang">
-						<img
-							src="./images/Ellipse-HTML.png"
-							alt="javaScript logo"
-							class="img-logo"
-						/>
-						<span class="lang-name">HTML</span>
-					</div>
-					<div class="lang">
-						<img
-							src="./images/Ellipse-css.png"
-							alt="javaScript logo"
-							class="img-logo"
-						/>
-						<span class="lang-name">CSS</span>
-					</div>
-				</li>
-				<li class="frameworks skill-section">
-					<div class="skill-title passive">
-						<h3>Frameworks</h3>
-						<span class="drop-icon"><i class="fas fa-angle-right"></i> </span>
-					</div>
-				</li>
-				<li class="skills skill-section">
-					<div class="skill-title passive">
-						<h3>Skills</h3>
-						<span class="drop-icon"><i class="fas fa-angle-right"></i> </span>
-					</div>
-				</li>
-			</ul>
 		</section>
 
 		<!-- Section contact me-->
-		<footer class="contact-me">
-			<div class="contact-text">
-				<h2>Contact me</h2>
-				<p>
-					If you have an appication you are interested in developing, a feature
-					that you need built or a pooject that needs coding, i'd love to help
-					with it
-				</p>
+		<footer class="contact-me" id="contact">
+			<div class="contact-me-section">
+				<div class="contact-text">
+					<h2>Contact me</h2>
+					<p>
+						If you have an appication you are interested in developing, a
+						feature that you need built or a pooject that needs coding, i'd love
+						to help with it
+					</p>
+				</div>
+				<form action="https://formspree.io/f/mpzbayyq" method="post">
+					<input
+						name="name"
+						id="name"
+						class="formElement"
+						type="text"
+						placeholder="Your name"
+						maxlength="30"
+						required
+					/>
+					<input
+						name="email"
+						id="email"
+						class="formElement"
+						type="email"
+						placeholder="Your email address"
+						required
+					/>
+					<textarea
+						name="message"
+						id="message"
+						class="formElement"
+						cols="30"
+						rows="10"
+						maxlength="500"
+						placeholder="Enter message here..."
+						required
+					></textarea>
+					<input class="submit-btn btn" type="submit" value="Get in Touch" />
+				</form>
 			</div>
-			<form action="https://formspree.io/f/mpzbayyq" method="post">
-				<input
-					name="name"
-					id="name"
-					class="formElement"
-					type="text"
-					placeholder="Your name"
-					maxlength="30"
-					required
-				/>
-				<input
-					name="email"
-					id="email"
-					class="formElement"
-					type="email"
-					placeholder="Your email address"
-					required
-				/>
-				<textarea
-					name="message"
-					id="message"
-					class="formElement"
-					cols="30"
-					rows="10"
-					maxlength="500"
-					placeholder="Enter message here..."
-					required
-				></textarea>
-				<input class="submit-btn btn" type="submit" value="Get in Touch" />
-			</form>
 		</footer>
 	</body>
 </html>
