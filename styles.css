@@ -37,6 +37,11 @@ ul {
 img {
   width: 100%;
   display: block;
+  transition: all 0.2s linear;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
 
 .navbar {
@@ -101,6 +106,11 @@ img {
 
 #logo {
   font-weight: 1000;
+  transition: all 1s linear;
+}
+
+#logo:hover {
+  transform: rotateY(360deg);
 }
 
 @media screen and (min-width: 992px) {
