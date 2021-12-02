@@ -22,6 +22,8 @@ body {
 	font-size: 1rem;
 }
 
+
+
 a {
 	text-decoration: none;
 }
@@ -37,6 +39,11 @@ ul {
 img {
 	width: 100%;
 	display: block;
+	transition: all .2s linear;
+}
+
+img:hover {
+	transform: scale(1.1);
 }
 
 .navbar {
