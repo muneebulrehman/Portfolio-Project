@@ -2,12 +2,17 @@
 
 # Portfolio Project
 
-> This is my portfolio in the initial stage.
+>Live demo
+https://muneebulrehman.github.io/Portfolio-Project/
+
+# Some screenshots of development phase.
 
 ![screenshot](./screenshot.png)
 ![screenshot](./screenshot2.png)
 ![screenshot](./screenshot3.png)
 ![screenshot](./screenshot4.png)
+
+# Additional Description.
 
 Additional description about the project and its features.
 - Added Work section with multiple projects.
@@ -18,7 +23,7 @@ Additional description about the project and its features.
 # Getting Started
 
 To get a local copy up and running follow these simple steps.
-- You cna clone this repo by typing <pre><code>git clone git@github.com/muneebulrehman/Portfolio-Project.git</code></pre> on your terminal.
+- You can clone this repo by typing <pre><code>git clone git@github.com/muneebulrehman/Portfolio-Project.git</code></pre> on your terminal.
 - Type <pre><code>cd Portfolio-Project</code></pre> to access the project on the terminal
 
 ## Built With
