@@ -7,6 +7,9 @@ https://muneebulrehman.github.io/Portfolio-Project/
 
 # Some screenshots of development phase.
 
+# Live Demo
+https://muneebulrehman.github.io/Portfolio-Project/index.html
+
 ![screenshot](./screenshot.png)
 ![screenshot](./screenshot2.png)
 ![screenshot](./screenshot3.png)
