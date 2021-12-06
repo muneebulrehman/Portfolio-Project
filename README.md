@@ -7,17 +7,10 @@ https://muneebulrehman.github.io/Portfolio-Project/
 
 # Some screenshots of development phase.
 
-# Live Demo
-https://muneebulrehman.github.io/Portfolio-Project/index.html
-
-# Some ScreenShots of the app while it was in development
-
 ![screenshot](./screenshot.png)
 ![screenshot](./screenshot2.png)
 ![screenshot](./screenshot3.png)
 ![screenshot](./screenshot4.png)
-
-# Additional Description.
 
 Additional description about the project and its features.
 - Added Work section with multiple projects.
