@@ -40,8 +40,10 @@ img {
   transition: all 0.2s linear;
 }
 
-img:hover {
-  transform: scale(1.1);
+@media screen and (min-width: 992px) {
+  img:hover {
+    transform: scale(1.1);
+  }
 }
 
 .navbar {
@@ -164,7 +166,7 @@ img:hover {
   padding: 0 3rem;
 }
 
-.banner h2 {
+.banner h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: #172b4d;
