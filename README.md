@@ -12,8 +12,6 @@ https://muneebulrehman.github.io/Portfolio-Project/
 ![screenshot](./screenshot3.png)
 ![screenshot](./screenshot4.png)
 
-# Additional Description.
-
 Additional description about the project and its features.
 - Added Work section with multiple projects.
 - Added a About Myself section.
@@ -53,6 +51,9 @@ Just download or clone the repo and run the index.html file.
 👤 **Benjamin Semah**
 
 - GitHub: [@githubhandle](https://github.com/BenjaminSemah)
+
+👤 **Semla Belhadj**
+- GitHub: [@githubhandle](https://github.com/selma-belhadj)
 
 ## 🤝 Contributing
 
