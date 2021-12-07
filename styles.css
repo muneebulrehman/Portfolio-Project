@@ -574,7 +574,7 @@ form {
 }
 
 .formElement {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   padding: 1rem;
   text-align: left;
   border-radius: 0.5rem;
@@ -588,6 +588,17 @@ form {
 .submit-btn {
   width: 10rem;
   background-color: #fff;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: white;
+}
+
+label::after {
+  content: ":";
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -611,5 +622,13 @@ form {
 
   .formElement {
     border-radius: 0;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+
+  label::after {
+    font-size: 1.5rem;
   }
 }
