@@ -52,6 +52,9 @@ Just download or clone the repo and run the index.html file.
 
 - GitHub: [@githubhandle](https://github.com/BenjaminSemah)
 
+👤 **Semla Belhadj**
+- GitHub: [@githubhandle](https://github.com/selma-belhadj)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
