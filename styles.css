@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --radius: 1rem;
   --clr-white: #fff;
@@ -44,6 +48,10 @@ img {
   img:hover {
     transform: scale(1.1);
   }
+
+  a:visited {
+    color: #396df2;
+  }
 }
 
 .navbar {
@@ -68,6 +76,19 @@ img {
   padding: 1rem 2rem;
 }
 
+.mobile-fix {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(96, 112, 255, 0.4);
+  background-blend-mode: multiply;
+  backdrop-filter: blur(5px);
+}
+
 .nav-toggle {
   background: transparent;
   border: transparent;
@@ -85,25 +106,38 @@ img {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  z-index: 10;
 }
 
 .show-links {
-  height: 300px;
+  height: 100%;
+}
+
+.navbar-header {
+  text-align: right;
+  padding-right: 1rem;
+  padding-top: 1rem;
+}
+
+.nav-close {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
 }
 
 .nav-link {
   display: block;
+  color: white;
   padding: 1rem 2rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 800;
   text-transform: capitalize;
   transition: var(--transition);
   cursor: pointer;
-}
-
-.nav-link:hover {
-  color: #2230d2;
-  padding: 2.25rem;
 }
 
 #logo {
@@ -112,7 +146,11 @@ img {
 }
 
 #logo:hover {
-  transform: rotateY(360deg);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 @media screen and (min-width: 992px) {
@@ -142,13 +180,14 @@ img {
   }
 
   .nav-link {
+    color: #6070ff;
     padding: 0 1rem;
     margin-right: 0.7rem;
   }
 
   .nav-link:hover {
-    padding: 0;
     background: transparent;
+    color: #2230d2;
   }
 }
 
