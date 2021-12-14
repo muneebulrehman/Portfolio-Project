@@ -12,17 +12,17 @@ navToggle.addEventListener('click', () => {
 });
 
 navClose.addEventListener('click', () => {
-  mobile.classList.remove('mobile-fix');
-  document.querySelector('.nav-links').classList.remove('show-links');
   navbarHeader.classList.add('hidden');
   navToggle.classList.remove('hidden');
+  mobile.classList.remove('mobile-fix');
+  document.querySelector('.nav-links').classList.remove('show-links');
 });
 
 scrollLink.forEach((link) => {
   link.addEventListener('click', () => {
-    mobile.classList.remove('mobile-fix');
-    document.querySelector('.nav-links').classList.remove('show-links');
     navbarHeader.classList.add('hidden');
     navToggle.classList.remove('hidden');
+    mobile.classList.remove('mobile-fix');
+    document.querySelector('.nav-links').classList.remove('show-links');
   });
 });
