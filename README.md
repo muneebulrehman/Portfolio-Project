@@ -17,6 +17,7 @@ Additional description about the project and its features.
 - Added a About Myself section.
 - Added a contact me section with form.
 - Made the web app desktop compatible
+- Added the dropdown navbar menu.
 
 # Getting Started
 
