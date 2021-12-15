@@ -3,6 +3,8 @@ const navToggle = document.querySelector(".nav-toggle");
 const navClose = document.querySelector(".nav-close");
 const scrollLink = document.querySelectorAll(".scroll-link");
 const navbarHeader = document.querySelector(".navbar-header");
+const work = document.querySelector(".work");
+const overlay = document.querySelector(".overlay");
 
 navToggle.addEventListener("click", () => {
 	mobile.classList.add("mobile-fix");
