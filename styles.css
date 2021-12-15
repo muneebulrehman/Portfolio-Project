@@ -811,3 +811,17 @@ label::after {
     display: inline;
   }
 }
+
+.error {
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #396df2;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
