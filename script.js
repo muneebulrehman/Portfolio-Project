@@ -278,14 +278,21 @@ closearr.forEach((el) => {
 const form = document.getElementById('form');
 const emailval = document.getElementById('email');
 const err = document.querySelector('.error');
+const nameholder = document.getElementById('name');
 
 form.addEventListener('submit', (e) => {
 	const emailadd = emailval.value;
+	const name = nameholder.value;
 	const str = emailadd.toLowerCase();
 	if (str !== emailadd) {
 		e.preventDefault();
 		err.classList.remove('hidden');
 	}
+	const obj = {
+		Name: name,
+		Email: emailadd,
+	};
+	localStorage.setItem('User', JSON.stringify(obj));
 });
 
 emailval.addEventListener('click', () => {
@@ -295,3 +302,9 @@ emailval.addEventListener('click', () => {
 err.addEventListener('click', () => {
 	err.classList.add('hidden');
 });
+
+const userDetails = JSON.parse(localStorage.getItem('User'));
+if (userDetails) {
+	emailval.value = userDetails.Email;
+	nameholder.value = userDetails.Name;
+}
