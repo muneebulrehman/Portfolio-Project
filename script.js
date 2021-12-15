@@ -1,47 +1,47 @@
-const mobile = document.querySelector(".mobile");
-const navToggle = document.querySelector(".nav-toggle");
-const navClose = document.querySelector(".nav-close");
-const scrollLink = document.querySelectorAll(".scroll-link");
-const navbarHeader = document.querySelector(".navbar-header");
-const work = document.querySelector(".work");
-const overlay = document.querySelector(".overlay");
+const mobile = document.querySelector('.mobile');
+const navToggle = document.querySelector('.nav-toggle');
+const navClose = document.querySelector('.nav-close');
+const scrollLink = document.querySelectorAll('.scroll-link');
+const navbarHeader = document.querySelector('.navbar-header');
+const work = document.querySelector('.work');
+const overlay = document.querySelector('.overlay');
 
-navToggle.addEventListener("click", () => {
-	mobile.classList.add("mobile-fix");
-	document.querySelector(".nav-links").classList.add("show-links");
-	navbarHeader.classList.remove("hidden");
-	navToggle.classList.add("hidden");
+navToggle.addEventListener('click', () => {
+	mobile.classList.add('mobile-fix');
+	document.querySelector('.nav-links').classList.add('show-links');
+	navbarHeader.classList.remove('hidden');
+	navToggle.classList.add('hidden');
 });
 
-navClose.addEventListener("click", () => {
-	navbarHeader.classList.add("hidden");
-	navToggle.classList.remove("hidden");
-	mobile.classList.remove("mobile-fix");
-	document.querySelector(".nav-links").classList.remove("show-links");
+navClose.addEventListener('click', () => {
+	navbarHeader.classList.add('hidden');
+	navToggle.classList.remove('hidden');
+	mobile.classList.remove('mobile-fix');
+	document.querySelector('.nav-links').classList.remove('show-links');
 });
 
 scrollLink.forEach((link) => {
-	link.addEventListener("click", () => {
-		navbarHeader.classList.add("hidden");
-		navToggle.classList.remove("hidden");
-		mobile.classList.remove("mobile-fix");
-		document.querySelector(".nav-links").classList.remove("show-links");
+	link.addEventListener('click', () => {
+		navbarHeader.classList.add('hidden');
+		navToggle.classList.remove('hidden');
+		mobile.classList.remove('mobile-fix');
+		document.querySelector('.nav-links').classList.remove('show-links');
 	});
 });
 
 const arr = [
 	{
-		img: "./images/SnapshootPortfolio-1.png",
-		heading1: "Tonic",
-		list1: ["canopy", "Back End Dev", "2015"],
+		img: './images/SnapshootPortfolio-1.png',
+		heading1: 'Tonic',
+		list1: ['canopy', 'Back End Dev', '2015'],
 		intro1:
-			"A daily selection of privately personalized reads; no accounts or sign-ups required.",
-		techstack1: ["html", "css", "javaScript"],
-		heading2: "Facebook 360",
-		list2: ["Facebook", "Full Stack Dev", "2015"],
+			'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+		techstack1: ['html', 'css', 'javaScript'],
+		heading2: 'Facebook 360',
+		list2: ['Facebook', 'Full Stack Dev', '2015'],
 		intro2:
 			"Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-		techstack2: ["html", "Ruby on Rails", "css", "javaScript"],
+		techstack2: ['html', 'Ruby on Rails', 'css', 'javaScript'],
 		para: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
   distinctio animi ab obcaecati doloremque commodi mollitia amet,
   necessitatibus aliquid quisquam! Nesciunt placeat deserunt aliquam
@@ -53,79 +53,79 @@ const arr = [
   asperiores saepe, officia et fugiat neque enim!   officiis
   quaerat itaque dolor iusto tempore, vel quis  nesciunt
   officia, vitae magnam atque? Odio et sunt error cum.`,
-		list3: ["html", "css", "javaScript", "github", "ruby", "Bootstrap"],
-		mainbtn: ["See Project"],
-		popupbtn: ["See Live", "See Source"],
+		list3: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
+		mainbtn: ['See Project'],
+		popupbtn: ['See Live', 'See Source'],
 		order: 3,
 		id: 0,
-		right: "",
-		rightimg: "",
+		right: '',
+		rightimg: '',
 		data: [1],
 		btn: [1],
 	},
 	{
-		img: "./images/SnapshootPortfolio-2.png",
-		heading1: "Multi-Post Stories",
-		list1: ["canopy", "Back End Dev", "2015"],
+		img: './images/SnapshootPortfolio-2.png',
+		heading1: 'Multi-Post Stories',
+		list1: ['canopy', 'Back End Dev', '2015'],
 		intro1:
-			"A daily selection of privately personalized reads; no accounts or sign-ups required.",
-		techstack1: ["html", "css", "javaScript"],
-		heading2: "Uber Navigation",
-		list2: ["Uber", "Lead Developer", "2018"],
+			'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+		techstack1: ['html', 'css', 'javaScript'],
+		heading2: 'Uber Navigation',
+		list2: ['Uber', 'Lead Developer', '2018'],
 		intro2:
-			"A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
-		techstack2: ["html", "Ruby on Rails", "css", "javaScript"],
-		list3: ["html", "css", "javaScript", "github", "ruby", "Bootstrap"],
-		mainbtn: ["See Project"],
-		popupbtn: ["See Live", "See Source"],
+			'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+		techstack2: ['html', 'Ruby on Rails', 'css', 'javaScript'],
+		list3: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
+		mainbtn: ['See Project'],
+		popupbtn: ['See Live', 'See Source'],
 		order: 4,
 		id: 1,
-		right: "right",
-		rightimg: "right-img",
+		right: 'right',
+		rightimg: 'right-img',
 		data: [2],
 		btn: [2],
 	},
 	{
-		img: "./images/SnapshootPortfolio-3.png",
-		heading1: "Tonic",
-		list1: ["canopy", "Back End Dev", "2015"],
+		img: './images/SnapshootPortfolio-3.png',
+		heading1: 'Tonic',
+		list1: ['canopy', 'Back End Dev', '2015'],
 		intro1:
-			"A daily selection of privately personalized reads; no accounts or sign-ups required.",
-		techstack1: ["html", "css", "javaScript"],
-		heading2: "Tonic",
-		list2: ["Canopy", "Back End Dev", "2015"],
+			'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+		techstack1: ['html', 'css', 'javaScript'],
+		heading2: 'Tonic',
+		list2: ['Canopy', 'Back End Dev', '2015'],
 		intro2:
-			"A daily selection of privately personalized reads; no accounts or sign-ups required.",
-		techstack2: ["html", "Ruby on Rails", "css", "javaScript"],
-		list3: ["html", "css", "javaScript", "github", "ruby", "Bootstrap"],
-		mainbtn: ["See Project"],
-		popupbtn: ["See Live", "See Source"],
+			'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+		techstack2: ['html', 'Ruby on Rails', 'css', 'javaScript'],
+		list3: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
+		mainbtn: ['See Project'],
+		popupbtn: ['See Live', 'See Source'],
 		order: 1,
 		id: 2,
-		right: "",
-		rightimg: "",
+		right: '',
+		rightimg: '',
 		data: [3],
 		btn: [3],
 	},
 	{
-		img: "./images/SnapshootPortfolio-4.png",
-		heading1: "Multi-Post-Stories",
-		list1: ["canopy", "Back End Dev", "2015"],
+		img: './images/SnapshootPortfolio-4.png',
+		heading1: 'Multi-Post-Stories',
+		list1: ['canopy', 'Back End Dev', '2015'],
 		intro1:
-			"A daily selection of privately personalized reads; no accounts or sign-ups required.",
-		techstack1: ["html", "css", "javaScript"],
-		heading2: "Multi-Post-Stories",
-		list2: ["Facebook", "Full Stack Dev", "2015"],
+			'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+		techstack1: ['html', 'css', 'javaScript'],
+		heading2: 'Multi-Post-Stories',
+		list2: ['Facebook', 'Full Stack Dev', '2015'],
 		intro2:
-			"Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
-		techstack2: ["html", "Ruby on Rails", "css", "javaScript"],
-		list3: ["html", "css", "javaScript", "github", "ruby", "Bootstrap"],
-		mainbtn: ["See Project"],
-		popupbtn: ["See Live", "See Source"],
+			'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+		techstack2: ['html', 'Ruby on Rails', 'css', 'javaScript'],
+		list3: ['html', 'css', 'javaScript', 'github', 'ruby', 'Bootstrap'],
+		mainbtn: ['See Project'],
+		popupbtn: ['See Live', 'See Source'],
 		order: 2,
 		id: 3,
-		right: "right",
-		rightimg: "right-img",
+		right: 'right',
+		rightimg: 'right-img',
 		data: [4],
 		btn: [4],
 	},
@@ -159,8 +159,8 @@ function protfolio() {
 				<li class="tech">${arr[i].techstack1[2]}</li>
 			</ul>
 			<button class="btn project-btn-small common-btn" data-size="${
-				arr[i].btn[0]
-			}" type="button">
+	arr[i].btn[0]
+}" type="button">
 				See Projects
 			</button>
 		</div>
@@ -185,8 +185,8 @@ function protfolio() {
 				<li class="tech">${arr[i].techstack2[3]}</li>
 			</ul>
 			<button class="btn project-btn-large common-btn" data-size="${
-				arr[i].btn[0]
-			}" type="button">
+	arr[i].btn[0]
+}" type="button">
 				See Projects
 			</button>
 		</div>
@@ -254,23 +254,23 @@ function protfolio() {
 // Window object fires the portfolio function as soon as the script is loaded.
 protfolio();
 
-const commonBtn = document.querySelectorAll(".common-btn");
+const commonBtn = document.querySelectorAll('.common-btn');
 
 commonBtn.forEach((btn) => {
-	btn.addEventListener("click", (e) => {
-		const num = +e.target.getAttribute("data-size");
+	btn.addEventListener('click', (e) => {
+		const num = +e.target.getAttribute('data-size');
 		const close = document.getElementById(num);
-		close.classList.remove("hidden");
-		overlay.classList.remove("hidden");
+		close.classList.remove('hidden');
+		overlay.classList.remove('hidden');
 	});
 });
 
-const closearr = document.querySelectorAll(".popup-close");
+const closearr = document.querySelectorAll('.popup-close');
 closearr.forEach((el) => {
-	el.addEventListener("click", (e) => {
-		const tar = +e.target.parentNode.getAttribute("data-size");
+	el.addEventListener('click', (e) => {
+		const tar = +e.target.parentNode.getAttribute('data-size');
 		const close = document.getElementById(tar);
-		close.classList.add("hidden");
-		overlay.classList.add("hidden");
+		close.classList.add('hidden');
+		overlay.classList.add('hidden');
 	});
 });
