@@ -274,3 +274,24 @@ closearr.forEach((el) => {
 		overlay.classList.add('hidden');
 	});
 });
+
+const form = document.getElementById('form');
+const emailval = document.getElementById('email');
+const err = document.querySelector('.error');
+
+form.addEventListener('submit', (e) => {
+	const emailadd = emailval.value;
+	const str = emailadd.toLowerCase();
+	if (str !== emailadd) {
+		e.preventDefault();
+		err.classList.remove('hidden');
+	}
+});
+
+emailval.addEventListener('click', () => {
+	err.classList.add('hidden');
+});
+
+err.addEventListener('click', () => {
+	err.classList.add('hidden');
+});

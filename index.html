@@ -236,7 +236,7 @@
 						to help with it
 					</p>
 				</div>
-				<form action="https://formspree.io/f/mpzbayyq" method="post">
+				<form action="https://formspree.io/f/mpzbayyq" method="post" id="form">
 					<label for="name">Name</label>
 					<input
 						name="name"
@@ -269,7 +269,10 @@
 						placeholder="Enter message here..."
 						required
 					></textarea>
-					<input class="submit-btn btn" type="submit" value="Get in Touch" />
+					<div class="validation">
+						<input class="submit-btn btn" type="submit" value="Get in Touch" />
+						<span class="error hidden">Enter email in lowercase</span>
+					</div>
 				</form>
 			</div>
 		</footer>
