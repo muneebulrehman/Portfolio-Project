@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:&display=swap"); */
 
 * {
 	margin: 0;
@@ -24,6 +24,7 @@ body {
 	background: #e5e5e5;
 	line-height: 1.5;
 	font-size: 1rem;
+	position: relative;
 }
 
 a {
@@ -46,7 +47,11 @@ img {
 
 @media screen and (min-width: 992px) {
 	img:hover {
-		transform: scale(1.1);
+		transform: scale(1.02);
+		-webkit-transform: scale(1.02);
+		-moz-transform: scale(1.02);
+		-ms-transform: scale(1.02);
+		-o-transform: scale(1.02);
 	}
 
 	a:visited {
@@ -344,6 +349,7 @@ img {
 	border-radius: 0.5rem;
 	font-size: 15px;
 	margin-right: 8px;
+	margin-bottom: 0.5rem;
 }
 
 .btn {
