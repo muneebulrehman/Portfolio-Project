@@ -287,3 +287,11 @@ form.addEventListener("submit", (e) => {
 		err.classList.remove("hidden");
 	}
 });
+
+contactForm.addEventListener('submit', (e) => {
+	if (email.value.match(regex).length !== 0) {
+		e.preventDefault();
+		errorMgs.style.display = 'block';
+		errorMgs.innerHTML = "Invalid email: email should be lower case";
+	}
+});
