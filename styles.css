@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:&display=swap"); */
 
 * {
   margin: 0;
@@ -24,6 +24,7 @@ body {
   background: #e5e5e5;
   line-height: 1.5;
   font-size: 1rem;
+  position: relative;
 }
 
 a {
@@ -46,7 +47,11 @@ img {
 
 @media screen and (min-width: 992px) {
   img:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
   }
 
   a:visited {
@@ -344,6 +349,7 @@ img {
   border-radius: 0.5rem;
   font-size: 15px;
   margin-right: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .btn {
@@ -669,5 +675,139 @@ label::after {
 
   label::after {
     font-size: 1.5rem;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 10;
+}
+
+.new-popup {
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: scroll;
+}
+
+.popup {
+  width: 90%;
+  margin: 1rem auto;
+  padding: 1rem 1rem;
+  background-color: #fff;
+  border-radius: var(--radius);
+}
+
+.popup-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-list {
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.p-img {
+  width: 100%;
+  object-fit: cover;
+  height: 16rem;
+  border-radius: var(--radius);
+}
+
+.popup-img {
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.hidden-para {
+  display: none;
+}
+
+.popup-close {
+  cursor: pointer;
+}
+
+.popup-large-tech {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  min-width: 90%;
+}
+
+.dont-hide {
+  display: flex;
+}
+
+.hide-for-small {
+  display: none;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
+  color: black;
+}
+
+.popup-buttons {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.link-icon {
+  margin-left: 1rem;
+}
+
+.popup-info-btn {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+}
+
+.info-popup {
+  margin-bottom: 1rem;
+}
+
+.popup-small-tech {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .popup {
+    width: 60%;
+  }
+
+  .p-img {
+    height: 40rem;
+  }
+
+  .popup-large-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 3rem 0;
+    grid-column-gap: 1.5rem;
+  }
+
+  .hide-for-small {
+    display: flex;
+  }
+
+  .popup-large-tech {
+    margin-top: 0;
+  }
+
+  .hidden-para {
+    display: inline;
   }
 }
