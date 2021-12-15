@@ -18,6 +18,7 @@ Additional description about the project and its features.
 - Added a contact me section with form.
 - Made the web app desktop compatible
 - Added the dropdown navbar menu.
+- Added form validation using js.
 
 # Getting Started
 
