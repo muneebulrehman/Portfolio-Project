@@ -159,8 +159,8 @@ function protfolio() {
 				<li class="tech">${arr[i].techstack1[2]}</li>
 			</ul>
 			<button class="btn project-btn-small common-btn" data-size="${
-				arr[i].btn[0]
-			}" type="button">
+	arr[i].btn[0]
+}" type="button">
 				See Projects
 			</button>
 		</div>
@@ -185,8 +185,8 @@ function protfolio() {
 				<li class="tech">${arr[i].techstack2[3]}</li>
 			</ul>
 			<button class="btn project-btn-large common-btn" data-size="${
-				arr[i].btn[0]
-			}" type="button">
+	arr[i].btn[0]
+}" type="button">
 				See Projects
 			</button>
 		</div>
@@ -281,17 +281,17 @@ const err = document.querySelector('.error');
 
 form.addEventListener('submit', (e) => {
 	const emailadd = emailval.value;
-	let str = emailadd.toLowerCase();
+	const str = emailadd.toLowerCase();
 	if (str !== emailadd) {
 		e.preventDefault();
 		err.classList.remove('hidden');
 	}
 });
 
-emailval.addEventListener("click", () => {
-	err.classList.add("hidden");
+emailval.addEventListener('click', () => {
+	err.classList.add('hidden');
 });
 
-err.addEventListener("click", () => {
-	err.classList.add("hidden");
+err.addEventListener('click', () => {
+	err.classList.add('hidden');
 });
