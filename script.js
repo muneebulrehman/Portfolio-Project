@@ -159,8 +159,8 @@ function protfolio() {
 				<li class="tech">${arr[i].techstack1[2]}</li>
 			</ul>
 			<button class="btn project-btn-small common-btn" data-size="${
-				arr[i].btn[0]
-			}" type="button">
+	arr[i].btn[0]
+}" type="button">
 				See Projects
 			</button>
 		</div>
@@ -185,8 +185,8 @@ function protfolio() {
 				<li class="tech">${arr[i].techstack2[3]}</li>
 			</ul>
 			<button class="btn project-btn-large common-btn" data-size="${
-				arr[i].btn[0]
-			}" type="button">
+	arr[i].btn[0]
+}" type="button">
 				See Projects
 			</button>
 		</div>
