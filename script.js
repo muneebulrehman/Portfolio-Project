@@ -278,6 +278,8 @@ closearr.forEach((el) => {
 const form = document.getElementById('form');
 const emailval = document.getElementById('email');
 const err = document.querySelector('.error');
+const nameholder = document.getElementById('name');
+const userMessage = document.getElementById('message');
 
 form.addEventListener('submit', (e) => {
 	const emailadd = emailval.value;
@@ -295,3 +297,24 @@ emailval.addEventListener('click', () => {
 err.addEventListener('click', () => {
 	err.classList.add('hidden');
 });
+
+form.addEventListener('input', () => {
+	const emailadd = emailval.value;
+	const name = nameholder.value;
+	const message = userMessage.value;
+	const obj = {
+		Name: name,
+		Email: emailadd,
+		Message: message,
+	};
+
+	localStorage.setItem('User', JSON.stringify(obj));
+});
+
+const curDetails = JSON.parse(localStorage.getItem('User'));
+
+if (localStorage.getItem('User')) {
+	emailval.value = curDetails.Email;
+	nameholder.value = curDetails.Name;
+	userMessage.value = curDetails.Message;
+}
