@@ -313,7 +313,7 @@ form.addEventListener('input', () => {
 
 const curDetails = JSON.parse(localStorage.getItem('User'));
 
-if (localStorage.getItem('User')) {
+if (localStorage.getItem['User']) {
 	emailval.value = curDetails.Email;
 	nameholder.value = curDetails.Name;
 	userMessage.value = curDetails.Message;
