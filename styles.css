@@ -20,7 +20,7 @@ html {
 /* Some global styles wght@200;400 */
 
 body {
-  font-family: "Poppins", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   background: #e5e5e5;
   line-height: 1.5;
   font-size: 1rem;
@@ -47,11 +47,7 @@ img {
 
 @media screen and (min-width: 992px) {
   img:hover {
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    -o-transform: scale(1.02);
+    transform: scale(1.005);
   }
 
   a:visited {
@@ -297,7 +293,7 @@ img {
 }
 
 .list li:not(.li)::before {
-  content: "\2022";
+  content: '\2022';
   color: #7a869a;
   font-size: 1rem;
   font-weight: bolder;
@@ -642,7 +638,7 @@ label {
 }
 
 label::after {
-  content: ":";
+  content: ':';
   font-size: 1rem;
 }
 
